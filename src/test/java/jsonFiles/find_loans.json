@@ -1,0 +1,201 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "number": {
+      "type": "integer"
+    },
+    "numberOfElements": {
+      "type": "integer"
+    },
+    "totalElements": {
+      "type": "integer"
+    },
+    "totalPages": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "calculationType": {
+              "type": "string"
+            },
+            "amountApproved": {
+              "type": "number"
+            },
+            "principalBalance": {
+              "type": "number"
+            },
+            "interestBalance": {
+              "type": "number"
+            },
+            "outstandingBalance": {
+              "type": "number"
+            },
+            "loanFees": {
+              "type": "array",
+              "items": {}
+            },
+            "loanApplicationFees": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "balance": {
+                      "type": "number"
+                    },
+                    "paidAmount": {
+                      "type": "number"
+                    },
+                    "plannedAmount": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "balance",
+                    "paidAmount",
+                    "plannedAmount"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "balance": {
+                      "type": "number"
+                    },
+                    "paidAmount": {
+                      "type": "number"
+                    },
+                    "plannedAmount": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "balance",
+                    "paidAmount",
+                    "plannedAmount"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "balance": {
+                      "type": "number"
+                    },
+                    "paidAmount": {
+                      "type": "number"
+                    },
+                    "plannedAmount": {
+                      "type": "number"
+                    }
+                  },
+                  "required": [
+                    "type",
+                    "balance",
+                    "paidAmount",
+                    "plannedAmount"
+                  ]
+                }
+              ]
+            },
+            "virtualIban": {
+              "type": "string"
+            },
+            "createdAt": {
+              "type": "string"
+            },
+            "updatedAt": {
+              "type": "string"
+            },
+            "endDate": {
+              "type": "null"
+            },
+            "relationshipManager": {
+              "type": "string"
+            },
+            "paymentFrequency": {
+              "type": "string"
+            },
+            "loanNumber": {
+              "type": "string"
+            },
+            "totalLoanAmount": {
+              "type": "number"
+            },
+            "annualFlatRate": {
+              "type": "number"
+            },
+            "holdbackRate": {
+              "type": "number"
+            },
+            "securityDeposit": {
+              "type": "number"
+            },
+            "pastDueAmount": {
+              "type": "number"
+            },
+            "paymentGateway": {
+              "type": "string"
+            },
+            "startDate": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status",
+            "calculationType",
+            "amountApproved",
+            "principalBalance",
+            "interestBalance",
+            "outstandingBalance",
+            "loanFees",
+            "loanApplicationFees",
+            "virtualIban",
+            "createdAt",
+            "updatedAt",
+            "endDate",
+            "relationshipManager",
+            "paymentFrequency",
+            "loanNumber",
+            "totalLoanAmount",
+            "annualFlatRate",
+            "holdbackRate",
+            "securityDeposit",
+            "pastDueAmount",
+            "paymentGateway",
+            "startDate"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "number",
+    "numberOfElements",
+    "totalElements",
+    "totalPages",
+    "size",
+    "content"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "number": {
+      "type": "integer"
+    },
+    "numberOfElements": {
+      "type": "integer"
+    },
+    "totalElements": {
+      "type": "integer"
+    },
+    "totalPages": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "corporateType": {
+              "type": "string"
+            },
+            "industry": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            },
+            "fullName": {
+              "type": "string"
+            },
+            "englishName": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "commercialRegistry": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "string"
+                },
+                "entityNumber": {
+                  "type": "string"
+                },
+                "placeOfIssue": {
+                  "type": "string"
+                },
+                "gregorianIssueDate": {
+                  "type": "string"
+                },
+                "gregorianExpiryDate": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "number",
+                "entityNumber",
+                "placeOfIssue",
+                "gregorianIssueDate",
+                "gregorianExpiryDate"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "corporateType",
+            "industry",
+            "location",
+            "fullName",
+            "englishName",
+            "phone",
+            "email",
+            "commercialRegistry"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "number",
+    "numberOfElements",
+    "totalElements",
+    "totalPages",
+    "size",
+    "content"
+  ]
+}

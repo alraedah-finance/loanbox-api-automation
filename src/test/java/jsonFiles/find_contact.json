@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "englishName": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+     "type" : [ "null", "string"]
+    },
+    "birthDate": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "onboarded": {
+      "type": "boolean"
+    },
+    "idDocument": {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "string"
+        },
+        "expirationDate": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "number",
+        "expirationDate"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "fullName",
+    "englishName",
+    "phone",
+    "email",
+    "birthDate",
+    "gender",
+    "onboarded",
+    "idDocument"
+  ]
+}

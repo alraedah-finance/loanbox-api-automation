@@ -1,0 +1,6 @@
+spring:
+  myDatabase:
+    url: jdbc:mysql://10.0.1.95:3306/payment_staging?useSSL=false
+    driver: com.mysql.cj.jdbc.Driver
+    username: admin
+    password: 7BUyResFH9GS1*

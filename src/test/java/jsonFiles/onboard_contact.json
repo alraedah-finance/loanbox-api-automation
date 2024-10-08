@@ -1,0 +1,56 @@
+{
+
+  "type": "object",
+  "properties": {
+    "birthDate": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "englishName": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "idDocument": {
+      "type": "object",
+      "properties": {
+        "expirationDate": {
+          "type": "string"
+        },
+        "number": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "expirationDate",
+        "number"
+      ]
+    },
+    "onboarded": {
+      "type": "boolean"
+    },
+    "phone": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "birthDate",
+    "email",
+    "englishName",
+    "fullName",
+    "gender",
+    "id",
+    "idDocument",
+    "onboarded",
+    "phone"
+  ]
+}

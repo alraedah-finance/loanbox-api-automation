@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "commercialRegistry": {
+      "type": "object",
+      "properties": {
+        "entityNumber": {
+          "type": "string"
+        },
+        "gregorianExpiryDate": {
+          "type": "string"
+        },
+        "gregorianIssueDate": {
+          "type": "string"
+        },
+        "number": {
+          "type": "string"
+        },
+        "placeOfIssue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "entityNumber",
+        "gregorianExpiryDate",
+        "gregorianIssueDate",
+        "number",
+        "placeOfIssue"
+      ]
+    },
+    "corporateType": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "englishName": {
+      "type": "string"
+    },
+    "fullName": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "commercialRegistry",
+    "corporateType",
+    "email",
+    "englishName",
+    "fullName",
+    "id",
+    "industry",
+    "location",
+    "phone"
+  ]
+}

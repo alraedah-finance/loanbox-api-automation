@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "number": {
+          "type": "integer"
+        },
+        "endDate": {
+          "type": "string"
+        },
+        "paymentPeriod": {
+          "type": "boolean"
+        },
+        "legacyKey": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "paymentAmount": {
+          "type": "number"
+        },
+        "principalAllocation": {
+          "type": "number"
+        },
+        "interestAllocation": {
+          "type": "number"
+        },
+        "principalDebtOpeningBalance": {
+          "type": "number"
+        },
+        "principalDebtClosingBalance": {
+          "type": "number"
+        },
+        "principalPaid": {
+          "type": "number"
+        },
+        "interestPaid": {
+          "type": "number"
+        },
+        "totalPaid": {
+          "type": "number"
+        },
+        "outstandingBalance": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "number",
+        "endDate",
+        "paymentPeriod",
+        "legacyKey",
+        "status",
+        "paymentAmount",
+        "principalAllocation",
+        "interestAllocation",
+        "principalDebtOpeningBalance",
+        "principalDebtClosingBalance",
+        "principalPaid",
+        "interestPaid",
+        "totalPaid",
+        "outstandingBalance"
+      ]
+    }
+  ]
+}

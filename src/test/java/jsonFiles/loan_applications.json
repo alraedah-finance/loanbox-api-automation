@@ -1,0 +1,169 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "number": {
+      "type": "integer"
+    },
+    "numberOfElements": {
+      "type": "integer"
+    },
+    "totalElements": {
+      "type": "integer"
+    },
+    "totalPages": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "requestedAt": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "amountRequested": {
+              "type": "number"
+            },
+            "amountApproved": {
+              "type": "number"
+            },
+            "termApproved": {
+              "type": "integer"
+            },
+            "calculationType": {
+              "type": "string"
+            },
+            "funder": {
+              "type": "string"
+            },
+            "disbursementAmount": {
+              "type": "number"
+            },
+            "bankAccount": {
+              "type": "object",
+              "properties": {
+                "iban": {
+                  "type": "string"
+                },
+                "disbursementBankName": {
+                  "type": "string"
+                },
+                "bankTitleEnglish": {
+                  "type": "string"
+                },
+                "bankTitleArabic": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "iban",
+                "disbursementBankName",
+                "bankTitleEnglish",
+                "bankTitleArabic"
+              ]
+            },
+            "loanApplicationId": {
+              "type": "string"
+            },
+            "company": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "corporateType": {
+                  "type": "string"
+                },
+                "industry": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                },
+                "fullName": {
+                  "type": "string"
+                },
+                "englishName": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "commercialRegistry": {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "type": "string"
+                    },
+                    "entityNumber": {
+                      "type": "string"
+                    },
+                    "placeOfIssue": {
+                      "type": "string"
+                    },
+                    "gregorianIssueDate": {
+                      "type": "string"
+                    },
+                    "gregorianExpiryDate": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "number",
+                    "entityNumber",
+                    "placeOfIssue",
+                    "gregorianIssueDate",
+                    "gregorianExpiryDate"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "corporateType",
+                "industry",
+                "location",
+                "fullName",
+                "englishName",
+                "phone",
+                "email",
+                "commercialRegistry"
+              ]
+            }
+          },
+          "required": [
+            "requestedAt",
+            "status",
+            "amountRequested",
+            "amountApproved",
+            "termApproved",
+            "calculationType",
+            "funder",
+            "disbursementAmount",
+            "bankAccount",
+            "loanApplicationId",
+            "company"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "number",
+    "numberOfElements",
+    "totalElements",
+    "totalPages",
+    "size",
+    "content"
+  ]
+}

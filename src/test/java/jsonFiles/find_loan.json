@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "createdAt": {
+      "type": "string"
+    },
+    "holdbackRate": {
+      "type": "number"
+    },
+    "endDate": {
+      "type": "null"
+    },
+    "securityDeposit": {
+      "type": "number"
+    },
+    "relationshipManager": {
+      "type": "string"
+    },
+    "paymentFrequency": {
+      "type": "string"
+    },
+    "loanNumber": {
+      "type": "string"
+    },
+    "annualFlatRate": {
+      "type": "number"
+    },
+    "startDate": {
+      "type": "string"
+    },
+    "paymentGateway": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "createdAt",
+    "holdbackRate",
+    "endDate",
+    "securityDeposit",
+    "relationshipManager",
+    "paymentFrequency",
+    "loanNumber",
+    "annualFlatRate",
+    "startDate",
+    "paymentGateway"
+  ]
+}

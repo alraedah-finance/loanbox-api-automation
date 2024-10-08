@@ -1,0 +1,23 @@
+{
+   "type": "object",
+  "properties": {
+    "isOnboarded": {
+      "type": "boolean"
+    },
+    "hadLoanBefore": {
+      "type": "boolean"
+    },
+    "isBlocked": {
+      "type": "boolean"
+    },
+    "invalidOtpAttempts": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "isOnboarded",
+    "hadLoanBefore",
+    "isBlocked",
+    "invalidOtpAttempts"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "number": {
+      "type": "integer"
+    },
+    "numberOfElements": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "integer"
+    },
+    "totalPages": {
+      "type": "integer"
+    },
+    "content": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "method": {
+              "type": "string"
+            },
+            "documentNumber": {
+              "type": "null"
+            },
+            "errorMessage": {
+              "type": "null"
+            },
+            "paymentSource": {
+              "type": ["string","null"]
+            },
+            "alraedahBank": {
+              "type": "string"
+            },
+            "paymentType": {
+              "type": "string"
+            },
+            "createdAt": {
+              "type": "string"
+            },
+            "depositDate": {
+              "type": "string"
+            },
+            "processedAt": {
+              "type": "string"
+            },
+            "recordDate": {
+              "type": "string"
+            },
+            "customerBank": {
+              "type": "null"
+            },
+            "id": {
+              "type": "null"
+            },
+            "status": {
+              "type": "string"
+            },
+            "direction": {
+              "type": "string"
+            },
+            "outstandingBalance": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "amount",
+            "method",
+            "documentNumber",
+            "errorMessage",
+            "paymentSource",
+            "alraedahBank",
+            "paymentType",
+            "createdAt",
+            "depositDate",
+            "processedAt",
+            "recordDate",
+            "customerBank",
+            "id",
+            "status",
+            "direction",
+            "outstandingBalance"
+          ]
+        }
+      ]
+    },
+    "totalElements": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "number",
+    "numberOfElements",
+    "size",
+    "totalPages",
+    "content",
+    "totalElements"
+  ]
+}
